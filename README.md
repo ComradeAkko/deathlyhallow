@@ -12,7 +12,7 @@ by Jiro Mizuno
 
 ## Before
 
-![Normally it looks like this](normal.PNG)
+![Normally it looks like this](normalpic.PNG)
 
 ## After with a redsweatshirt
 
