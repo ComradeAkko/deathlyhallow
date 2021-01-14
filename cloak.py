@@ -10,7 +10,7 @@ def cloak():
     # get intial 24 frames to base background on
     for i in range(24):
         ret,background = cam.read()
-    # flip the background for convolution purposes
+    # flip the background for easier viewing
     background = np.flip(background, axis = 1)
 
     # while the camera is running
@@ -18,7 +18,7 @@ def cloak():
         # get the current camera
         ret, img = cam.read()
 
-        # flip the image for convolution purposes
+        # flip the image for easier viewing
         img = np.flip(img, axis = 1)
 
         # convert the image of HSV color space
@@ -51,7 +51,7 @@ def cloak():
         # display the images
         cv2.imshow('Display', img)
 
-        # end if commanded 
+        # end if commanded 'esc'
         k = cv2.waitKey(10)
         if k == 27:
             break
